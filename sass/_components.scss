@@ -1,0 +1,96 @@
+@use './variables' as v;
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.wrapper {
+  width: min(v.$content-max-width-rem, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: var(--space-200) var(--space-600);
+  border-radius: var(--radius-min);
+
+  transition: color, background-color 0.5s;
+}
+
+.accordion {
+  &__item {
+    border-color: inherit;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 0fr;
+    transition: grid-template-rows 0.5s;
+
+    &[data-state="opened"] {
+      grid-template-rows: auto 1fr;
+    }
+  }
+
+  &__arrow {
+    transition: transform 0.5s;
+
+    &[data-state="opened"] {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__description {
+    overflow-y: hidden;
+  }
+}
+
+.sns {
+  width: 12rem;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-600);
+  }
+
+  &__link {
+    color: inherit;
+  }
+}
+
+.contact {
+  &__heading {
+    font-size: var(--font-size-500);
+    margin-bottom: var(--space-100);
+  }
+
+  &__item {
+    font-weight: 600;
+  }
+
+  &__link {
+    color: inherit;
+    font-weight: 500;
+  }
+}
+
+.download {
+  &__heading {
+    display: block;
+    font-size: var(--font-size-500);
+    margin-bottom: var(--space-100);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: inherit;
+  }
+
+  &__icon {
+    margin-right: var(--space-200);
+  }
+}

@@ -1,0 +1,52 @@
+//Reset 
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard Variable", system-ui, sans-serif;
+  color: var(--color-gray-500);
+  line-height: 1.6;
+  word-break: keep-all;
+  font-size: var(--font-size-400);
+  background-color: var(--color-primary-brown-100);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-gray-500);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+}
+
+h2 {
+  font-size: var(--font-size-700);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  min-width: 0;
+  // flex 컨테이너에서 width: 100%로 설정해서 사용
+}

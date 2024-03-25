@@ -1,0 +1,222 @@
+.header {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-top: var(--space-600);
+  font-size: var(--font-size-600);
+
+  &__item {
+    &+& {
+      margin-left: var(--space-700);
+    }
+  }
+
+  &__link {
+    transition: color 0.5s;
+
+    &:hover {
+      color: var(--color-gray-400);
+    }
+  }
+
+
+  &__button {
+    background-color: var(--color-primary-red-500);
+    color: var(--color-gray-100);
+
+    &:hover {
+      background-color: var(--color-primary-red-400);
+    }
+  }
+}
+
+.hero {
+  margin-top: var(--space-700);
+}
+
+.feature {
+  --space-y: var(--space-500);
+
+  margin-top: var(--space-800);
+  grid-template: auto 1fr / repeat(3, 1fr);
+  column-gap: var(--space-400);
+  position: relative;
+
+  &__heading {
+    grid-column-end: span 3;
+    text-align: center;
+    margin-bottom: var(--space-600);
+  }
+
+  &__item {
+    background-color: var(--color-white);
+    font-size: var(--font-size-500);
+  }
+
+  &__title {
+    padding: var(--space-200) var(--space-y);
+  }
+
+  &__description {
+    padding-inline: var(--space-y);
+    padding-bottom: var(--space-400);
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: calc(var(--space-900) * 3.5);
+    height: calc(var(--space-900) * 3.5);
+    background-color: var(--color-primary-red-200);
+    border-radius: var(--radius-max);
+  }
+
+  &::before {
+    bottom: -20%;
+    left: -20%;
+  }
+
+  &::after {
+    top: -10%;
+    right: -20%;
+  }
+}
+
+.gallery {
+  margin-top: var(--space-800);
+  grid-template: auto 1fr 1fr / repeat(3, 1fr);
+  grid-gap: var(--space-400);
+
+  &__heading {
+    grid-column-end: span 3;
+    text-align: center;
+    margin-bottom: var(--space-600);
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    color: var(--color-gray-100);
+    font-size: var(--font-size-200);
+    z-index: 1;
+    line-height: 1;
+    bottom: 2rem;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      border-radius: var(--radius-max);
+      width: 2.5rem;
+      height: 2.5rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--add {
+      right: 1.5rem;
+      width: 0.75rem;
+      height: 0.75rem;
+
+      &::before {
+        background-color: var(--color-primary-brown-500);
+      }
+    }
+
+    &--new {
+      text-transform: uppercase;
+      right: 4rem;
+
+      &::before {
+        background-color: var(--color-primary-red-500);
+      }
+    }
+  }
+}
+
+.qna {
+  --space-y: var(--space-400);
+  --space-x: var(--space-500);
+  --border-type: 1.5px solid var(--color-primary-red-500);
+
+  margin-top: var(--space-800);
+
+  &__accordion {
+    border-top: var(--border-type);
+    border-bottom: var(--border-type);
+  }
+
+  &__item {
+    padding-top: var(--space-y);
+    padding-bottom: var(--space-y);
+    padding-right: calc(var(--space-x) * 2);
+    color: var(--color-gray-500);
+
+    &+& {
+      border-top: var(--border-type);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: var(--space-y);
+    right: var(--space-x);
+    font-size: var(--font-size-600);
+    transform: translateX(50%);
+    color: var(--color-primary-red-500);
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: var(--space-600);
+  }
+
+  &__question {
+    font-size: var(--font-size-500);
+    padding-left: var(--space-x);
+  }
+
+  &__answer {
+    transition: padding-top 0.5s;
+    padding-left: calc(var(--space-x) / 2);
+    margin-left: calc(var(--space-x) / 2);
+    border-left: var(--border-type);
+    border-left-width: 2px;
+
+    &[data-state="opened"] {
+      margin-top: var(--space-300);
+    }
+  }
+}
+
+.footer {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: var(--space-800);
+  margin-bottom: var(--space-800);
+  align-items: end;
+
+  &__sns {
+    color: var(--color-primary-red-500);
+  }
+
+  &__copyright {
+    color: var(--color-primary-brown-500);
+    margin-top: var(--space-600);
+    grid-column: span 3;
+  }
+
+  &__contact {
+    color: var(--color-gray-500);
+  }
+
+  &__download {
+    color: var(--color-gray-500);
+  }
+}

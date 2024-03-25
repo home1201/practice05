@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="#/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" as="style" crossorigin
+    href="#https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <script type="module" src="/js/main.js"></script>
+  <title></title>
+</head>
+
+<body>
+  <header class="header flex wrapper">
+    <a class="header__link" href="#"><img class="header__image" src="/assets/image/LOGO.png" alt="go to home"
+        width="275" height="85"></a>
+    <nav class="header__menu">
+      <ul class="header__list flex">
+        <li class="header__item"><a class="header__link" href="#">메인</a></li>
+        <li class="header__item"><a class="header__link" href="#">소개</a></li>
+        <li class="header__item"><a class="header__link" href="#">갤러리</a></li>
+        <li class="header__item"><a class=" header__link" href="#">Q&A</a></li>
+      </ul>
+    </nav>
+    <a class="header__button button" href="#">신청하기</a>
+  </header>
+  <main class="wrapper">
+    <section class="hero">
+      <h1 class="hero__heading u-hide">More Vege? More Healthy!</h1>
+      <img class="hero__image" src="/assets/image/hero.png" alt="main image" width="1106" height="492">
+    </section>
+    <section class="feature grid">
+      <h2 class="feature__heading">베지그룹은요!</h2>
+      <article class="feature__item">
+        <img class="feature__image" src="/assets/image/image1.png" alt="">
+        <h3 class="feature__title">신선한 야채를 산지에서 바로!</h3>
+        <p class="feature__description">신선한 야채와 과일을 산지에서 직송으로 집 앞까지 배송해 드려요. 상품 퀄리티는 걱정하지 마세요. 베지그룹 검수팀이 착실히 검사 후
+          보내드립니다.
+        </p>
+      </article>
+      <article class="feature__item">
+        <img class="feature__image" src="/assets/image/image2.png" alt="">
+        <h3 class="feature__title">조금 흠집나도 맛있어요!</h3>
+        <p class="feature__description">현재 유통되는 과일들은 대부분이 겉보기에도 예쁜 농작물들이 대부분이에요. 모양이 예쁘지 않아 버려지는 농산물들, 품질에는 전혀 이상이 없어요!
+        </p>
+      </article>
+      <article class="feature__item">
+        <img class="feature__image" src="/assets/image/image3.png" alt="">
+        <h3 class="feature__title">먹고 싶은 것들만 쏙쏙!</h3>
+        <p class="feature__description">난 1인 가구라 사과 2알만 먹고 싶은데...
+          걱정마세요! 베지그룹에서는 2개 이상 품목부터 단품 판매가 가능합니다. 원하는 수량만큼만 장바구니에 쏙~</p>
+      </article>
+    </section>
+    <section class="gallery grid">
+      <h2 class="gallery__heading">베지그룹 상품 갤러리</h2>
+      <article class="gallery__item">
+        <img class="gallery__image" src="/assets/image/cherry.png" alt="체리" width="371" height="371">
+        <span class="gallery__icon gallery__icon--new">new</span>
+        <button class="gallery__icon gallery__icon--add" type="button"><i class="icon-plus"></i><span
+            class="u-hide">추가하기</span></button>
+      </article>
+      <article class="gallery__item">
+        <img class="gallery__image" src="/assets/image/bae.png" alt="배" width="371" height="371">
+        <span class="gallery__icon gallery__icon--new">new</span>
+        <button class="gallery__icon gallery__icon--add" type="button"><i class="icon-plus"></i><span
+            class="u-hide">추가하기</span></button>
+      </article>
+      <article class="gallery__item">
+        <img class="gallery__image" src="/assets/image/suckryu.png" alt="석류" width="371" height="371">
+        <span class="gallery__icon gallery__icon--new">new</span>
+        <button class="gallery__icon gallery__icon--add" type="button"><i class="icon-plus"></i><span
+            class="u-hide">추가하기</span></button>
+      </article>
+      <article class="gallery__item">
+        <img class="gallery__image" src="/assets/image/berry.png" alt="레드베리" width="371" height="371">
+        <span class="gallery__icon gallery__icon--new">new</span>
+        <button class="gallery__icon gallery__icon--add" type="button"><i class="icon-plus"></i><span
+            class="u-hide">추가하기</span></button>
+      </article>
+      <article class="gallery__item">
+        <img class="gallery__image" src="/assets/image/lemon.png" alt="레몬" width="371" height="371">
+        <span class="gallery__icon gallery__icon--new">new</span>
+        <button class="gallery__icon gallery__icon--add" type="button"><i class="icon-plus"></i><span
+            class="u-hide">추가하기</span></button>
+      </article>
+      <article class="gallery__item">
+        <img class="gallery__image" src="/assets/image/muhwa.png" alt="무화과" width="371" height="371">
+        <span class="gallery__icon gallery__icon--new">new</span>
+        <button class="gallery__icon gallery__icon--add" type="button"><i class="icon-plus"></i><span
+            class="u-hide">추가하기</span></button>
+      </article>
+    </section>
+    <section class="qna">
+      <h2 class="qna__heading">베지그룹 Q&A</h2>
+      <section class="qna__accordion accordion">
+        <article class="qna__item accordion__item" data-accordion-item data-state="opened">
+          <h3 class="qna__question accordion__title">베지그룹은 어떤 서비스인가요? 다른 쇼핑몰과 차별점이 있나요?</h3>
+          <button class="qna__button accordion__button" type="button" data-accordion-button><i
+              class="icon-arrow accordion__arrow" data-state="opened"></i></button>
+          <p class="qna__answer accordion__description" data-state="opened">베지그룹은 산지에서 바로
+            직송해서 가져오는 농산물을 싸게 파는
+            서비스입니다. 결제수단을 등록해 두시면 설정해 두신
+            기간에 농산물이 자동으로 배송이 옵니다.
+            배송 이전에 카카오톡 메시지를 통해 연락을 드려요. 확인해 보시고 마음에 드는 농산물만 담으세요!</p>
+        </article>
+        <article class="qna__item accordion__item" data-accordion-item data-state="closed">
+          <h3 class="qna__question accordion__title">환불을 어떻게 신청하나요?</h3>
+          <button class="qna__button accordion__button" type="button" data-accordion-button><i
+              class="icon-arrow accordion__arrow" data-state="closed"></i></button>
+          <p class="qna__answer accordion__description" data-state="closed">베지그룹은 산지에서 바로 직송해서 가져오는 농산물을 싸게 파는 서비스입니다.
+            결제수단을 등록해 두시면 설정해 두신
+            기간에 농산물이 자동으로 배송이 옵니다.
+            배송 이전에 카카오톡 메시지를 통해 연락을 드려요. 확인해 보시고 마음에 드는 농산물만 담으세요!</p>
+        </article>
+        <article class="qna__item accordion__item" data-accordion-item data-state="closed">
+          <h3 class="qna__question accordion__title">자주 쓰는 카드를 등록하고 싶어요.</h3>
+          <button class="qna__button accordion__button" type="button" data-accordion-button><i
+              class="icon-arrow accordion__arrow" data-state="closed"></i></button>
+          <p class="qna__answer accordion__description" data-state="closed">베지그룹은 산지에서 바로 직송해서 가져오는 농산물을 싸게 파는 서비스입니다.
+            결제수단을 등록해 두시면 설정해 두신
+            기간에 농산물이 자동으로 배송이 옵니다.
+            배송 이전에 카카오톡 메시지를 통해 연락을 드려요. 확인해 보시고 마음에 드는 농산물만 담으세요!</p>
+        </article>
+      </section>
+    </section>
+  </main>
+  <footer class="wrapper footer grid">
+    <section class="footer__sns sns">
+      <img class="sns__logo" src="/assets/image/LOGO.png" alt="로고 이미지" width="275" height="85">
+      <ul class="sns__list">
+        <li class="sns__item"><a class="sns__link" href="#"><i class="icon-facebook"></i><span class="u-hide">페이스북
+              바로가기</span></a></li>
+        <li class="sns__item"><a class="sns__link" href="#"><i class="icon-twitter"></i><span class="u-hide">트위터
+              바로가기</span></a></li>
+        <li class="sns__item"><a class="sns__link" href="#"><i class="icon-instagram"></i><span class="u-hide">인스타그램
+              바로가기</span></a></li>
+        <li class="sns__item"><a class="sns__link" href="#"><i class="icon-linkedin"></i><span class="u-hide">링크드인
+              바로가기</span></a></li>
+      </ul>
+    </section>
+    <section class="footer__contact contact">
+      <strong class="contact__heading">연락 및 문의</strong>
+      <div class="contact__item">전화 : <a class="contact__link" href="tel:02.234.1234">02-234-1234</a></div>
+      <div class="contact__item">메일 : <a class="contact__link" href="mailto:abcd1234@abc.com">abcd1234@abc.com</a></div>
+    </section>
+    <section class="footer__download download">
+      <strong class="download__heading">다운로드</strong>
+      <a class="download__link" href="#">
+        <i class="icon-apple download__icon"></i>App Store
+      </a>
+      <a class="download__link" href="#">
+        <i class="icon-google-play download__icon"></i>Google Play
+      </a>
+    </section>
+    <small class="footer__copyright">© Service Name. All rights reserved. Terms of Service. Privacy Policy</small>
+  </footer>
+</body>
+
+</html>
